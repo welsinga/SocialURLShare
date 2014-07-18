@@ -40,7 +40,7 @@ public class AboutActivity extends ActionBarActivity {
 
         TextView tvCredits = (TextView) findViewById(R.id.writtenBy);
         tvCredits.setText(
-                Html.fromHtml(getString(R.string.written_by, createLink(getString(R.string.googel_plus_url), AUTHOR))));
+                Html.fromHtml(getString(R.string.written_by, createLink(getString(R.string.google_plus_url), AUTHOR))));
 
         TextView tvLicense = (TextView) findViewById(R.id.license);
         tvLicense.setText(Html.fromHtml(

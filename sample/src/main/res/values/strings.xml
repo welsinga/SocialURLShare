@@ -27,7 +27,7 @@
 
     <string name="disclaimer">This sample app demonstrates basic implementation of the %1$s library</string>
     <string name="github_repo_url">https://github.com/welsinga/SocialURLShare</string>
-    <string name="googel_plus_url">http://google.com/+WiebeElsinga</string>
+    <string name="google_plus_url">http://google.com/+WiebeElsinga</string>
     <string name="written_by">SocialURLShare was written by %1$s.</string>
     <string name="license">This app uses software licensed under the %1$s.</string>
 

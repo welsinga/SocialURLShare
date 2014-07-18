@@ -17,7 +17,7 @@ Currently the library supports the following Social Channels:
 -   Google+&trade;
 
 ## [Changelog](https://github.com/welsinga/SocialURLShare/wiki/Changelog)
-Current version: -
+Current version: 0.1.0
 
 
 ## Usage
@@ -30,6 +30,52 @@ Implementation example: sharing to Twitter&trade;
     sharer.setLink("link to share");
     sharer.share();
 ```    
+
+## Build
+### Gradle
+
+#### From maven central
+
+Add maven central to your `build.gradle`:
+
+```groovy
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+ 
+repositories {
+  mavenCentral()
+}
+```
+
+Then declare SocialURLShare within your dependencies:
+
+```groovy
+dependencies {
+  ...
+  compile('com.wiebe-elsinga.android.library:socialurlshare:0.1.0')
+}
+```
+
+
+### Maven
+
+#### From maven central
+
+To use SocialURLShare within your Maven build simply add
+
+```xml
+<dependency>
+  <groupId>com.wiebe-elsinga.android.library</groupId>
+  <artifactId>socialurlshare</artifactId>
+  <version>${socialurlshare.version}</version>
+  <type>aar</type>  
+</dependency>
+```
+
+to your pom.xml
 
 ## License
 

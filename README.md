@@ -9,6 +9,13 @@ Sure, you can use the default ShareIntent class in Android, but what if you just
 **SocialURLShare** provides different Social Channel implementations for easy URL sharing. 
 The implementation will look if a native social channel app has been installed. If so, the native app will share the URL. If not, the default browser will be used..
 
+Do you want to see it in action, check out the SocialURLShare sample app.
+
+<a href="http://play.google.com/store/apps/details?id=com.elsinga.socialurlshare.demo.app">
+  <img alt="SocialURLShare Demo on Google Play"
+         src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+</a>
+
 Currently the library supports the following Social Channels:
 
 -   Facebook&trade;

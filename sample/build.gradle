@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.elsinga.socialurlshare.demo.app"
+
+        minSdkVersion 8
+        targetSdkVersion 19
+
+        versionName VERSION_NAME
+        versionCode Integer.parseInt(VERSION_CODE)
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+
+    signingConfigs {
+        release {
+            def Properties localProps = new Properties()
+            localProps.load(new FileInputStream(file('../local.properties')))
+            def Properties keyProps = new Properties()
+            assert localProps['keystore.props.file'];
+            keyProps.load(new FileInputStream(file(localProps['keystore.props.file'])))
+            storeFile file(keyProps["store"])
+            keyAlias keyProps["alias"]
+            storePassword keyProps["storePass"]
+            keyPassword keyProps["pass"]
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            runProguard false
+
+            signingConfig signingConfigs.debug
+        }
+        release {
+            debuggable false
+            runProguard true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+
+            signingConfig signingConfigs.release
+
+            zipAlign true
+        }
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile 'com.android.support:appcompat-v7:19.+'
+}

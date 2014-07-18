@@ -16,6 +16,10 @@ Currently the library supports the following Social Channels:
 -   LinkedIn&trade;
 -   Google+&trade;
 
+## [Changelog](https://github.com/welsinga/SocialURLShare/wiki/Changelog)
+Current version: -
+
+
 ## Usage
 
 Just create a SocialChannel Share Class, set the link and and call share:

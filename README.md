@@ -1,5 +1,3 @@
-# SocialURLShare
-============
 ![SocialURLShare](sample/src/main/res/drawable-xxhdpi/ic_launcher.png)
 
 Android library for easy URL sharing to social channels.

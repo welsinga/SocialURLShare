@@ -2,10 +2,6 @@
 
 Android library for easy URL sharing to social channels.
 
-Travis master: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=master)](https://travis-ci.org/welsinga/SocialURLShare)
-Travis dev: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=dev)](https://travis-ci.org/welsinga/SocialURLShare)
-
-
 ## Overview
 
 Sure, you can use the default ShareIntent class in Android, but what if you just want to share an URL and just want to share it with some Social Channels...
@@ -93,6 +89,11 @@ to your pom.xml
 If you find a bug or have a new feature you want to add, just create a pull request and submit it to us. You can also [file an issue](https://github.com/welsinga/SocialURLShare/issues/new).
 
 Please note, if you have a pull request, make sure to use the [develop branch](https://github.com/welsinga/SocialURLShare/tree/develop) as your base.
+
+## CI
+
+Travis master: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=master)](https://travis-ci.org/welsinga/SocialURLShare)
+Travis dev: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=dev)](https://travis-ci.org/welsinga/SocialURLShare)
 
 
 ## License

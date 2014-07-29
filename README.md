@@ -2,6 +2,10 @@
 
 Android library for easy URL sharing to social channels.
 
+Travis master: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=master)](https://travis-ci.org/welsinga/SocialURLShare)
+Travis dev: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=dev)](https://travis-ci.org/welsinga/SocialURLShare)
+
+
 ## Overview
 
 Sure, you can use the default ShareIntent class in Android, but what if you just want to share an URL and just want to share it with some Social Channels...

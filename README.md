@@ -88,6 +88,13 @@ To use SocialURLShare within your Maven build simply add
 
 to your pom.xml
 
+## Contribute
+
+If you find a bug or have a new feature you want to add, just create a pull request and submit it to us. You can also [file an issue](https://github.com/welsinga/SocialURLShare/issues/new).
+
+Please note, if you have a pull request, make sure to use the [develop branch](https://github.com/welsinga/SocialURLShare/tree/develop) as your base.
+
+
 ## License
 
     Copyright 2014 Wiebe Elsinga

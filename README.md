@@ -93,7 +93,7 @@ Please note, if you have a pull request, make sure to use the [develop branch](h
 ## CI
 
 Travis master: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=master)](https://travis-ci.org/welsinga/SocialURLShare)
-Travis dev: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=dev)](https://travis-ci.org/welsinga/SocialURLShare)
+Travis develop: [![Build Status](https://travis-ci.org/welsinga/SocialURLShare.svg?branch=develop)](https://travis-ci.org/welsinga/SocialURLShare)
 
 
 ## License

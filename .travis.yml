@@ -2,6 +2,7 @@ language: java
 
 branches:
   only:
+    - develop
     - master
 
 jdk: oraclejdk7

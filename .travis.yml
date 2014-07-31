@@ -9,7 +9,7 @@ jdk: oraclejdk7
 env:
   global:
     - ANDROID_SDK_VERSION="r23.0.2"
-    - ANDROID_BUILD_TOOLS_VERSION="19.0.1"
+    - ANDROID_BUILD_TOOLS_VERSION="19.1.0"
     - ANDROID_VERSION="19"
 
 notifications:

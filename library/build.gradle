@@ -20,17 +20,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_6
         targetCompatibility JavaVersion.VERSION_1_6
     }
-
-    buildTypes {
-        debug {
-            debuggable true
-            runProguard false
-        }
-
-        release {
-            runProguard false
-        }
-    }
 }
 
 // Used to push in maven

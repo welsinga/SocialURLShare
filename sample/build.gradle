@@ -21,18 +21,6 @@ android {
 
     signingConfigs {
         release {
-            def Properties localProps = new Properties()
-            localProps.load(new FileInputStream(file('../local.properties')))
-            def Properties keyProps = new Properties()
-            if(localProps.containsKey('keystore.props.file')) {
-                keyProps.load(new FileInputStream(file(localProps['keystore.props.file'])))
-                storeFile file(keyProps["store"])
-                keyAlias keyProps["alias"]
-                storePassword keyProps["storePass"]
-                keyPassword keyProps["pass"]
-            } else {
-                println 'Probably your local.properties that the sample module uses isn\'t correctly setup.'
-            }
         }
     }
 
@@ -40,8 +28,6 @@ android {
         debug {
             debuggable true
             runProguard false
-
-            signingConfig signingConfigs.debug
         }
         release {
             debuggable false
@@ -59,4 +45,18 @@ android {
 dependencies {
     compile project(':library')
     compile 'com.android.support:appcompat-v7:19.+'
+}
+
+
+if (project.hasProperty('keyStore') &&
+        project.hasProperty('storePassword') &&
+        project.hasProperty('keyAlias') &&
+        project.hasProperty('keyPassword')) {
+    android.signingConfigs.release.storeFile = file(keyStore)
+    android.signingConfigs.release.keyAlias = keyAlias
+    android.signingConfigs.release.storePassword = storePassword
+    android.signingConfigs.release.keyPassword = keyPassword
+} else {
+    println 'Running without signing the release apk'
+    android.buildTypes.release.signingConfig = null
 }

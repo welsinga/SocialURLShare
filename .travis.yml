@@ -7,7 +7,6 @@ android:
 
 branches:
   only:
-    - develop
     - master
 
 notifications:
@@ -22,4 +21,4 @@ before_install:
   - ./gradlew -v
   - uname -a
 
-script: ./gradlew clean assembleDebug
+script: ./gradlew clean build

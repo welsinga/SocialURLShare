@@ -15,4 +15,3 @@
 #
 
 sdk.dir=/your/path/to/android-sdk
-keystore.props.file=../keystore.properties

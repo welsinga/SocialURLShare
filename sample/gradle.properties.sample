@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This is an example keystore.properties file.
-store=mykeystore.keystore
-alias=keyname
-pass=keyPassword
-storePass=keystorePassword
+# Android keystore data
+keyStore=mykeystore.keystore
+storePassword=storePassword
+keyAlias=keyAlias
+keyPassword=keyPassword
